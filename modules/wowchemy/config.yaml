@@ -27,8 +27,8 @@ module:
     min: '0.101.0'
     extended: true
   imports:
-    - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-core
-    - path: github.com/wowchemy/wowchemy-hugo-themes/modules/wowchemy-seo
+    - path: github.com/AlanAnsell/wowchemy-hugo-themes/modules/wowchemy-core
+    - path: github.com/AlanAnsell/wowchemy-hugo-themes/modules/wowchemy-seo
   mounts:
     - source: content
       target: content
@@ -49,6 +49,7 @@ security:
     getenv:
       - ^HUGO_
       - ^WC_
+      - WC_POST_CSS
 params:
   locale:
     date_format: 'Jan 2, 2006'
